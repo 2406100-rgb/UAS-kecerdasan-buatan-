@@ -9,8 +9,8 @@
 
 | Nama | NIM |
 |------|-----|
-| Rio Cahya Ramadhan | (Isi NIM) |
-| Nama Anggota | (Isi NIM) |
+| Rio Cahya Ramadhan | 2406077 |
+| Kaka Riscky Ardiana | 2406100 |
 
 ---
 
@@ -174,9 +174,9 @@ Distribusi jumlah data ditampilkan pada tabel berikut.
 
 | Kelas | Train | Validation | Test |
 |--------|------:|-----------:|-----:|
-| Healthy | ... | ... | ... |
-| Leaf Curl | ... | ... | ... |
-| Leaf Spot | ... | ... | ... |
+| Healthy | 80 | 10 | 100 |
+| Leaf Curl | 80 | 10 | 100 |
+| Leaf Spot | 80 | 10 | 100 |
 
 ---
 
@@ -185,13 +185,13 @@ Distribusi jumlah data ditampilkan pada tabel berikut.
 ### Distribusi Data
 
 <p align="center">
-<img src="images/distribusi_data.png" width="650">
+<img src="data/images/gambar_1.png" width="650">
 </p>
 
 ### Contoh Dataset
 
 <p align="center">
-<img src="images/sample_dataset.png" width="700">
+<img src="data/images/gambar_2.png" width="700">
 </p>
 
 ---
@@ -347,7 +347,7 @@ Untuk memastikan proses preprocessing berjalan dengan baik, dilakukan visualisas
 > **Gambar 5.1 Hasil Data Augmentation**
 
 <p align="center">
-<img src="images/data_augmentation.png" width="750">
+<img src="data/images/gambar_3.png" width="750">
 </p>
 
 Visualisasi tersebut menunjukkan bahwa gambar mengalami perubahan posisi, rotasi, maupun pembesaran tanpa mengubah karakteristik utama daun. Hal ini membantu model agar mampu mengenali objek pada berbagai kondisi.
@@ -434,13 +434,13 @@ Perkembangan proses pelatihan dapat diamati melalui grafik berikut.
 ### Grafik Accuracy
 
 <p align="center">
-<img src="images/mobilenet_accuracy.png" width="700">
+<img src="data/images/gambar_4.png" width="700">
 </p>
 
 ### Grafik Loss
 
 <p align="center">
-<img src="images/mobilenet_loss.png" width="700">
+<img src="data/images/gambar_5.png" width="700">
 </p>
 
 Grafik menunjukkan bahwa nilai **training accuracy** dan **validation accuracy** meningkat seiring bertambahnya epoch, sedangkan nilai loss mengalami penurunan. Hal tersebut menunjukkan bahwa model mampu mempelajari pola pada dataset dengan baik.
@@ -493,13 +493,13 @@ Model dilatih menggunakan parameter yang sama dengan MobileNetV2 sehingga hasil 
 ### Grafik Accuracy
 
 <p align="center">
-<img src="images/efficientnet_accuracy.png" width="700">
+<img src="data/images/gambar_6.png" width="700">
 </p>
 
 ### Grafik Loss
 
 <p align="center">
-<img src="images/efficientnet_loss.png" width="700">
+<img src="data/images/gambar_7.png" width="700">
 </p>
 
 Grafik menunjukkan bahwa EfficientNetB0 juga mengalami peningkatan nilai accuracy dan penurunan loss selama proses pelatihan.
@@ -574,8 +574,8 @@ Nilai accuracy diperoleh setelah proses evaluasi model selesai dilakukan.
 
 | Model | Accuracy |
 |--------|---------:|
-| MobileNetV2 | ... |
-| EfficientNetB0 | ... |
+| MobileNetV2 | 0.9333 |
+| EfficientNetB0 | 0.3333 |
 
 > Isi nilai accuracy sesuai hasil output notebook Google Colab.
 
@@ -640,7 +640,7 @@ Confusion Matrix digunakan untuk mengetahui jumlah prediksi yang benar maupun sa
 ## MobileNetV2
 
 <p align="center">
-<img src="images/confusion_matrix_mobilenet.png" width="550">
+<img src="data/images/gambar_8.png" width="550">
 </p>
 
 **Gambar 7.1** Confusion Matrix MobileNetV2.
@@ -650,7 +650,7 @@ Confusion Matrix digunakan untuk mengetahui jumlah prediksi yang benar maupun sa
 ## EfficientNetB0
 
 <p align="center">
-<img src="images/confusion_matrix_efficientnet.png" width="550">
+<img src="data/images/gambar_9.png" width="550">
 </p>
 
 **Gambar 7.2** Confusion Matrix EfficientNetB0.
@@ -664,7 +664,7 @@ Confusion Matrix memperlihatkan bagaimana model mengklasifikasikan setiap kelas.
 Grafik berikut menunjukkan perubahan nilai accuracy selama proses pelatihan.
 
 <p align="center">
-<img src="images/accuracy_comparison.png" width="700">
+<img src="data/images/gambar_13.png" width="700">
 </p>
 
 **Gambar 7.3** Perbandingan Accuracy MobileNetV2 dan EfficientNetB0.
@@ -678,7 +678,7 @@ Grafik menunjukkan bahwa kedua model mengalami peningkatan accuracy pada setiap 
 Grafik berikut memperlihatkan perubahan nilai loss selama proses pelatihan.
 
 <p align="center">
-<img src="images/loss_comparison.png" width="700">
+<img src="data/images/gambar_14.png" width="700">
 </p>
 
 **Gambar 7.4** Perbandingan Loss MobileNetV2 dan EfficientNetB0.
@@ -687,16 +687,34 @@ Nilai loss yang semakin kecil menunjukkan bahwa model mampu mempelajari pola dat
 
 ---
 
-# 7.7 Perbandingan Performa Model
+## 7.7 Perbandingan Akhir Kedua Model
+
+<p align="center">
+<img src="data/images/gambar_10.png" width="600">
+</p>
+
+**Gambar 7.5** Perbandingan Accuracy Akhir MobileNetV2 dan EfficientNetB0.
+
+Grafik menunjukkan bahwa MobileNetV2 memperoleh nilai accuracy akhir yang lebih tinggi dibandingkan EfficientNetB0.
+
+<p align="center">
+<img src="data/images/gambar_11.png" width="600">
+</p>
+
+**Gambar 7.6** Perbandingan Loss Akhir MobileNetV2 dan EfficientNetB0.
+
+Semakin kecil nilai loss menunjukkan bahwa model memiliki kemampuan pembelajaran yang lebih baik selama proses pelatihan.
+
+# 7.8 Perbandingan Performa Model
 
 Seluruh hasil evaluasi dirangkum pada tabel berikut.
 
 | Metrik | MobileNetV2 | EfficientNetB0 |
 |---------|------------:|---------------:|
-| Accuracy | ... | ... |
-| Precision | ... | ... |
-| Recall | ... | ... |
-| F1-Score | ... | ... |
+| Accuracy | 0.9333 | 0.3333 |
+| Precision | 0.94 | 0.11 |
+| Recall | 0.93 | 0.33 |
+| F1-Score | 0.93 | 0.17 |
 
 > Isikan nilai sesuai hasil evaluasi pada notebook.
 
@@ -704,7 +722,7 @@ Berdasarkan tabel tersebut dapat diketahui model mana yang memiliki performa pal
 
 ---
 
-# 7.8 Analisis Hasil
+# 7.9 Analisis Hasil
 
 Hasil evaluasi menunjukkan bahwa kedua model mampu melakukan klasifikasi terhadap citra daun cabai dengan baik. Hal tersebut terlihat dari nilai accuracy yang tinggi serta hasil confusion matrix yang menunjukkan sebagian besar data berhasil diprediksi dengan benar.
 
@@ -714,7 +732,7 @@ Model dengan nilai **Accuracy**, **Precision**, **Recall**, dan **F1-Score** ter
 
 ---
 
-# 7.9 Ringkasan Evaluation
+# 7.10 Ringkasan Evaluation
 
 Berdasarkan hasil evaluasi dapat disimpulkan bahwa:
 
@@ -790,7 +808,7 @@ Hasil Klasifikasi
 Contoh hasil prediksi yang diperoleh dari sistem adalah sebagai berikut.
 
 <p align="center">
-<img src="images/hasil_prediksi.png" width="500">
+<img src="data/images/gambar_12.png" width="500">
 </p>
 
 Contoh keluaran sistem.
